@@ -10,7 +10,7 @@
 <body ng-controller="StoreController as store">
     <h1 ng-repeat="product in store.products">
         {{product.name}}
-        <em>{{product.price}}</em>
+        <em>{{product.price | currency}}</em>
     </h1>
     <script src="https://cdn.bootcss.com/angular.js/1.4.7/angular.min.js"></script>
     <script src="js/app.js"></script>
