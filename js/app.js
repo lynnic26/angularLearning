@@ -8,5 +8,14 @@
     app.controller('StoreController', function () {
         this.products = gems;
     });
+    app.controller('TabController', function () {
+       this.tab = 1;
+       this.selectedTab = function (curTab) {
+            this.tab = curTab;
+       }
+       this.isSelected = function (checkTab) {
+           return this.tab === checkTab;
+       }
+    });
 
 })();
